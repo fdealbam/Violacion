@@ -1,1 +1,1 @@
-web: gunicorn violacion.wsgi --log-file
+web gunicorn run:app --preload --workers 1
