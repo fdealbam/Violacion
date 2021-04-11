@@ -507,11 +507,11 @@ body = html.Div([
            [
                dbc.Col(html.H1([str(f"{conf_2015:,d}")])),
                    #conf_2015)),d
-               dbc.Col(html.H2([str(f"{conf_2016:,d}")])),
-               dbc.Col(html.H2([str(f"{conf_2017:,d}")])),
-               dbc.Col(html.H2([str(f"{conf_2018:,d}")])),
-               dbc.Col(html.H2([str(f"{conf_2019:,d}")])),
-               dbc.Col(html.H2([str(f"{conf_2020:,d}")])),
+               dbc.Col(html.H1([str(f"{conf_2016:,d}")])),
+               dbc.Col(html.H1([str(f"{conf_2017:,d}")])),
+               dbc.Col(html.H1([str(f"{conf_2018:,d}")])),
+               dbc.Col(html.H1([str(f"{conf_2019:,d}")])),
+               dbc.Col(html.H1([str(f"{conf_2020:,d}")])),
             ],justify= "start"),
     
 # Cintillo 1.1
@@ -720,7 +720,6 @@ body = html.Div([
                   width={'size': 3, 'offset': 0}),
                ], justify="start",),
         
-        
     dbc.Row([    
            dbc.Col(html.H5([dbc.Badge("Equipo responsable", 
                           href="https://raw.githubusercontent.com/fdealbam/feminicidios/main/Autores.pdf",
@@ -729,10 +728,10 @@ body = html.Div([
                                      )]),
                   width={'size': 3,  "offset": 4}),
                        ], justify="start",),
-      ]),
- 
+        
+            ])
 
-       
+
 app.layout = html.Div([body])
 
 from application.dash import app
