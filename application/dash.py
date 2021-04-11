@@ -732,10 +732,7 @@ body = html.Div([
       ]),
  
 
-       html.Br(),
-       html.Br(),
-       html.Br(),
-
+       
 app.layout = html.Div([body])
 
 from application.dash import app
