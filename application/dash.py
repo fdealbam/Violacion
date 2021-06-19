@@ -1,3 +1,5 @@
+# Violaciones 
+
 import dash
 import matplotlib.pyplot as plt 
 import dash_bootstrap_components as dbc
@@ -381,7 +383,34 @@ body = html.Div([
                
        html.Br(),
        html.Br(),
-       html.Br(),
+      html.Br(),
+    
+       dbc.Row(
+            [
+                #html.H4("Consideraciones generales "),
+                html.P(
+                    "El delito de violación, que aquí reúne a violación equiparada y violación simle "
+                    "es uno de los delitos más graves de la violencia de género que se vive en el país, "
+                    "además, son problemas aún irresueltos y son tema central de la " 
+                    "agenda legislativa, pero hoy alcanzan relevancia en la agenda seguridad pública nacional, también. "
+                    "Este dashboard analítico se compone de una sección en la cual tratamos el delito de violación, observamos "
+                    "su gravedad según intervalos anuales o mensuales; incluimos el análisis detallado de cuatro "
+                    "entidades con más incidencias de este delito; finalmente, comparamos los rankings por entidad "
+                    "según sumas del periódo 2015 al 2021 con las tasas por entidad del mismo intervalo. " 
+                    " "                    
+                    "Hoy existen cada vez mayor atención institucional para atender la violencia contra las mujeres y son fuerte "
+                    "preocupación de la sociedad, esto último se evidencia en el hecho que todos seamos más vigilantes al respecto. "
+                    "No obstante, aún hace falta más acción social, sobretodo, más intervención institucional "
+                    "para diseñar estrategias efectivas de prevención y promover su denuncia. Es imperativo "
+                    "acabar con estas violencias de género. "
+                    "",
+                    style= {"font-size":22,})], 
+           
+        style= {"margin-left":"100px", "margin-right":"100px", "text-align":"justify"},
+       ),
+                
+       html.Br(),          
+    html.Br(),
        html.Br(),
      
     
@@ -529,7 +558,7 @@ body = html.Div([
                        dbc.CardImg(src="https://github.com/fdealbam/Violacion/blob/main/application/static/cdmx.jpeg?raw=true",
                   style={'size': 2,}),
                           html.P(
-                          "Los 10 Municipios con mayor número de casos de violación son: Iztapalapa (1,245), Cuauhtémoc (856), Gustavo A. Madero (683), Álvaro Obregón (524), Coyoacán (444), Tlalpan (435), Xochimilco (369), Venustiano Carranza (315), Miguel Hidalgo (313) y Tláhuac (259).",
+                          "Las 10 alcaldías con mayor número de casos de violación son: Iztapalapa (1,245), Cuauhtémoc (856), Gustavo A. Madero (683), Álvaro Obregón (524), Coyoacán (444), Tlalpan (435), Xochimilco (369), Venustiano Carranza (315), Miguel Hidalgo (313) y Tláhuac (259).",
                      style={'font-size': 14, "font-family":"Arial", "text-align":"justify" }),
                ]), style={"background-color":"white",
                          "box-shadow": "10px 20px 30px black",
@@ -542,7 +571,7 @@ body = html.Div([
                        dbc.CardImg(src="https://github.com/fdealbam/Violacion/blob/main/application/static/mx.jpeg?raw=true",
                                     style={'size': 2,}),
                        html.P(
-                           "Los 10 Municipios con mayor número de casos de violación son: Ecatepec de Morelos (1,530), Toluca (647), Nezahualcóyotl (644), Naucalpan de Juárez (588), Chimalhuacán (559), Cuautitlán Izcalli (524), Chalco (511), Tecámac (478), Tlalnepantla de Baz (462) e Ixtapaluca (443).",
+                           "Los 10 municipios con mayor número de casos de violación son: Ecatepec de Morelos (1,530), Toluca (647), Nezahualcóyotl (644), Naucalpan de Juárez (588), Chimalhuacán (559), Cuautitlán Izcalli (524), Chalco (511), Tecámac (478), Tlalnepantla de Baz (462) e Ixtapaluca (443).",
                               style={'font-size': 14, "font-family":"Arial", "text-align":"justify" }),
                        ]), style={"background-color":"white",
                          "box-shadow": "10px 20px 30px black",
@@ -562,7 +591,7 @@ body = html.Div([
                        dbc.CardImg(src="https://github.com/fdealbam/Violacion/blob/main/application/static/chi.jpeg?raw=true"),
     
                        html.P(
-                           "Los 10 Municipios con mayor número de casos de violación son: Juárez (3,003), Chihuahua (1,707), Cuauhtémoc (252), Delicias (240), Hidalgo del Parral (155), Guachochi (137), Nuevo Casas Grandes (101), Bocoyna (95), Camargo (74), Guadalupe y Calvo (55).",
+                           "Los 10 municipios con mayor número de casos de violación son: Juárez (3,003), Chihuahua (1,707), Cuauhtémoc (252), Delicias (240), Hidalgo del Parral (155), Guachochi (137), Nuevo Casas Grandes (101), Bocoyna (95), Camargo (74), Guadalupe y Calvo (55).",
                            style={'font-size': 14, "font-family":"Arial", "text-align":"justify" }),
                               ]),
                              style={"background-color":"white",
@@ -577,7 +606,7 @@ body = html.Div([
                    
                                    
                         html.P(
-                          "Los 5 Municipios con mayor número de casos de violación son: Tijuana (3,185), Mexicali (1,679), Ensenada (943), Tecate (187) y Playas de Rosarito (158).",
+                          "Los 5 municipios con mayor número de casos de violación son: Tijuana (3,185), Mexicali (1,679), Ensenada (943), Tecate (187) y Playas de Rosarito (158).",
                            style={'font-size': 14, "font-family":"Arial", "text-align":"justify" }),
                ]), style={"background-color":"white",
                          "box-shadow": "10px 20px 30px black",
@@ -598,7 +627,7 @@ body = html.Div([
        dbc.Row([
                dbc.Col(html.P("Fuente: SENSNSP"),
                         style={#"margin-left": "90px", 
-                               "font-size": 22, "text-align": "right", "margin-right":"50px"}),
+                               "font-size": 22, "text-align": "right", "margin-right":"400px"}),
            ], justify= "right"),
        html.Br(),
        html.Br(),
@@ -651,27 +680,74 @@ body = html.Div([
     
 
         
+    # nuevo
     
-    
-    
+    #dbc.Jumbotron(
+    #[
+        dbc.Row([
 
-    dbc.Row([
+                html.Br(),
+                html.H4("Metodología "),
+                html.P(
+                    "El presente dashboard es un ejercicio institucional con el objeto de "
+                    "informar a los diputados y diputados y público interesado sobre un tema "
+                    "de vital importancia en la vida política. "
+                    "La metodología que hemos empleado para analizar los datos la detallamos enseguida. "
+                    "Como se indica en cada caso, la información sobre el delito violación proviene del Secretariado "
+                    "Ejecutivo Nacional del Sistema Nacional de Seguridad Pública (SENSNSP) (2015-2021); "
+                    " "
+                    "Este dashboard seguramente será completado progresivamente con otras fuentes de información "
+                    "tanto gubernamental, como aquella proveniente de organizaciones civiles que " 
+                    "dan seguimiento al tema. "
+                    "En ningún caso, este contenido representa algún "
+                    "posicionamiento partidista, personal o institucional, mucho menos opinión o postura alguna "
+                    "sobre el fenómeno." 
+                    "En los aspectos técnicos, esta información fue tratada con el lenguaje de programación Python "
+                    "y varias de las librerías más comunes (Dash, Choropleth, Pandas, Numpy, Geopandas, etc.), "
+                    "que nos ayudan a automatizar la recurrencia (request) a la fuente de información en tiempo real "
+                    "y las operaciones necesarias para crear graficas y mapas interactivos. "
+                    "El volumen de información manejado fue de 230 megabytes en de la base de datos del SENSNSP. "
+                    " ",
+                    style= {"font-size":22,})], 
+           
+        style= {"margin-left":"100px", "margin-right":"100px", "text-align":"justify"},
+       ),
+
+                html.Br(),
+    
+        
+    
+    
+    
+   html.Br(),
+   html.Br(),
+   html.Br(),
+   html.Br(),
+   html.Br(),
+    
+   dbc.Row([
                                     #https://github.com/fdealbam/CamaraDiputados/blob/b11ef31e8e0f73e1a4a06ce60402563e1bd0122e/application/static/logocamara.jfif
-           dbc.Col(dbc.CardImg(src="https://github.com/fdealbam/CamaraDiputados/blob/main/application/static/logocamara.jfif?raw=true"),
-                        width=4, lg={'size': 1,  "offset": 3, }),
+           dbc.Col(dbc.CardImg(src="https://github.com/fdealbam/0entrada/blob/ce2cda9ccf7732861b8494b36562ebe9c8c642a6/application/static/logo%20cesopycamara.jpeg?raw=true"),
+                        width=5, md={'size': 2,  "offset": 2, }),
             
-           dbc.Col(html.H6(" S e c r e t a r í a   G e n e r a l," 
-                           " Secretaría de Servicios Parlamentarios, "
+           dbc.Col(html.H5(" Centro de Estudios Sociales y de Opinión Pública," 
+                           " Cámara de Diputados"
                            " México, 2021 "),
                   width={'size': 3, 'offset': 0}),
                ], justify="start",),
-   dbc.Row([    
+            
+   
+   
+    html.Br(),
+
+    
+    
+    dbc.Row([    
            dbc.Col(html.P([dbc.Badge("Equipo responsable", style={"font-size":20},
                           href="https://innovation-learning.herokuapp.com/",
                                      )]),
-                  width={'size': 3,  "offset": 3}),
+                  width={'size': 3,  "offset": 4}),
                        ], justify="start",),
-        
             ])
 
 
