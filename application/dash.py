@@ -526,10 +526,10 @@ body = html.Div([
      dbc.Row(
            [
                dbc.Col(dbc.Button(([html.P("Ciudad de México", style={"font-size": 30,"color": "black","background-color": "white"}),
-                       dbc.CardImg(src="https://github.com/fdealbam/Violencia-Familiar/blob/main/application/static/cdmx2.jpeg?raw=true",
+                       dbc.CardImg(src="https://github.com/fdealbam/Violacion/blob/main/application/static/cdmx.jpeg?raw=true",
                   style={'size': 2,}),
                           html.P(
-                          "Los 10 Municipios con mayor número de casos de violación son: Iztapalapa (1,245), Cuauhtémoc (856), Gustavo A. Madero (683), Álvaro Obregón (524), Coyoacán (444), Tlalpan (435), Xochimilco (369), Venustiano Carranza (315), Miguel Hidalgo (313), y Tláhuac (259).",
+                          "Los 10 Municipios con mayor número de casos de violación son: Iztapalapa (1,245), Cuauhtémoc (856), Gustavo A. Madero (683), Álvaro Obregón (524), Coyoacán (444), Tlalpan (435), Xochimilco (369), Venustiano Carranza (315), Miguel Hidalgo (313) y Tláhuac (259).",
                      style={'font-size': 14, "font-family":"Arial", "text-align":"justify" }),
                ]), style={"background-color":"white",
                          "box-shadow": "10px 20px 30px black",
@@ -539,10 +539,10 @@ body = html.Div([
                          }, disabled=True)),
                
                dbc.Col(dbc.Button(([html.P("México", style={"font-size": 30,"color": "black","background-color": "white"}),
-                       dbc.CardImg(src="https://github.com/fdealbam/Violencia-Familiar/blob/main/application/static/mx.jpeg?raw=true",
+                       dbc.CardImg(src="https://github.com/fdealbam/Violacion/blob/main/application/static/mx.jpeg?raw=true",
                                     style={'size': 2,}),
                        html.P(
-                           "Los 10 Municipios con mayor número de casos de violación son: Ecatepec de Morelos (1,530), Toluca (647), Nezahualcóyotl (644), Naucalpan de Juárez (588), Chimalhuacán (559), Cuautitlán Izcalli (524), Chalco (511), Tecámac (478), Tlalnepantla de Baz (462), y Ixtapaluca (443).",
+                           "Los 10 Municipios con mayor número de casos de violación son: Ecatepec de Morelos (1,530), Toluca (647), Nezahualcóyotl (644), Naucalpan de Juárez (588), Chimalhuacán (559), Cuautitlán Izcalli (524), Chalco (511), Tecámac (478), Tlalnepantla de Baz (462) e Ixtapaluca (443).",
                               style={'font-size': 14, "font-family":"Arial", "text-align":"justify" }),
                        ]), style={"background-color":"white",
                          "box-shadow": "10px 20px 30px black",
@@ -559,10 +559,10 @@ body = html.Div([
     
                 dbc.Row([
           dbc.Col(dbc.Button(([html.P("Chihuahua ", style={"font-size": 30,"color": "black","background-color": "white"}),
-                       dbc.CardImg(src="https://github.com/fdealbam/Violencia-Familiar/blob/main/application/static/chi.jpeg?raw=true"),
+                       dbc.CardImg(src="https://github.com/fdealbam/Violacion/blob/main/application/static/chi.jpeg?raw=true"),
     
                        html.P(
-                           "Los 10 Municipios con mayor número de casos de violación son: Juárez (3,003), Chihuahua (1,707), Cuauhtémoc (252), Delicias (240), Hidalgo del Parral (155), Guachochi (137), Nuevo Casas Grandes (101), Bocoyna (95), Camargo (74), y Guadalupe y Calvo (55).",
+                           "Los 10 Municipios con mayor número de casos de violación son: Juárez (3,003), Chihuahua (1,707), Cuauhtémoc (252), Delicias (240), Hidalgo del Parral (155), Guachochi (137), Nuevo Casas Grandes (101), Bocoyna (95), Camargo (74), Guadalupe y Calvo (55).",
                            style={'font-size': 14, "font-family":"Arial", "text-align":"justify" }),
                               ]),
                              style={"background-color":"white",
@@ -573,11 +573,11 @@ body = html.Div([
                          }, disabled=True)),
                        
                dbc.Col(dbc.Button(([html.P("Baja California ", style={"font-size": 30,"color": "black","background-color": "white"}),
-                       dbc.CardImg(src="https://github.com/fdealbam/Violencia-Familiar/blob/main/application/static/bc.jpeg?raw=true"),
+                       dbc.CardImg(src="https://github.com/fdealbam/Violacion/blob/main/application/static/bc.jpeg?raw=true"),
                    
                                    
                         html.P(
-                          "Los 5 Municipios con mayor número de casos de violación son: Tijuana (3,185), Mexicali (1,679), Ensenada (943), Tecate (187), Playas de Rosarito (158).",
+                          "Los 5 Municipios con mayor número de casos de violación son: Tijuana (3,185), Mexicali (1,679), Ensenada (943), Tecate (187) y Playas de Rosarito (158).",
                            style={'font-size': 14, "font-family":"Arial", "text-align":"justify" }),
                ]), style={"background-color":"white",
                          "box-shadow": "10px 20px 30px black",
@@ -680,8 +680,8 @@ app.layout = html.Div([body],
                                     "background-color": "lightgray"}
                                     )
 
-from application.dash import app
-from settings import config
+#from application.dash import app
+#from settings import config
 
 if __name__ == "__main__":
     app.run_server()
