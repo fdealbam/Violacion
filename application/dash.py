@@ -539,7 +539,7 @@ body = html.Div([
                          }, disabled=True)),
                
                dbc.Col(dbc.Button(([html.P("México", style={"font-size": 30,"color": "black","background-color": "white"}),
-                       dbc.CardImg(src="https://github.com/fdealbam/Violencia-Familiar/blob/main/application/static/nvoleon2.jpeg?raw=true",
+                       dbc.CardImg(src="https://github.com/fdealbam/Violencia-Familiar/blob/main/application/static/mx.jpeg?raw=true",
                                     style={'size': 2,}),
                        html.P(
                            "Los 10 Municipios con mayor número de casos de violación son: Ecatepec de Morelos (1,530), Toluca (647), Nezahualcóyotl (644), Naucalpan de Juárez (588), Chimalhuacán (559), Cuautitlán Izcalli (524), Chalco (511), Tecámac (478), Tlalnepantla de Baz (462), y Ixtapaluca (443).",
@@ -573,7 +573,7 @@ body = html.Div([
                          }, disabled=True)),
                        
                dbc.Col(dbc.Button(([html.P("Baja California ", style={"font-size": 30,"color": "black","background-color": "white"}),
-                       dbc.CardImg(src="https://github.com/fdealbam/Violencia-Familiar/blob/main/application/static/gjto2.jpeg?raw=true"),
+                       dbc.CardImg(src="https://github.com/fdealbam/Violencia-Familiar/blob/main/application/static/bc.jpeg?raw=true"),
                    
                                    
                         html.P(
