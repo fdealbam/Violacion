@@ -529,7 +529,7 @@ body = html.Div([
                        dbc.CardImg(src="https://github.com/fdealbam/Violencia-Familiar/blob/main/application/static/cdmx2.jpeg?raw=true",
                   style={'size': 2,}),
                           html.P(
-                          "Los 10 Municipios con mayor número de casos de violencia familiar son: Iztapalapa (25531), Gustavo A. Madero (16243), Cuauhtémoc (11085), Álvaro Obregón (10539), Tlalpan (9827), Coyoacán (8968), Iztacalco (8424), Venustiano Carranza (7757), Xochimilco (6987), y Azcapotzalco (6779).",
+                          "Los 10 Municipios con mayor número de casos de violación son: Iztapalapa (1,245), Cuauhtémoc (856), Gustavo A. Madero (683), Álvaro Obregón (524), Coyoacán (444), Tlalpan (435), Xochimilco (369), Venustiano Carranza (315), Miguel Hidalgo (313), y Tláhuac (259).",
                      style={'font-size': 14, "font-family":"Arial", "text-align":"justify" }),
                ]), style={"background-color":"white",
                          "box-shadow": "10px 20px 30px black",
@@ -538,11 +538,11 @@ body = html.Div([
                          
                          }, disabled=True)),
                
-               dbc.Col(dbc.Button(([html.P("Nuevo León", style={"font-size": 30,"color": "black","background-color": "white"}),
+               dbc.Col(dbc.Button(([html.P("México", style={"font-size": 30,"color": "black","background-color": "white"}),
                        dbc.CardImg(src="https://github.com/fdealbam/Violencia-Familiar/blob/main/application/static/nvoleon2.jpeg?raw=true",
                                     style={'size': 2,}),
                        html.P(
-                           "Los 10 Municipios con mayor número de casos de violencia familiar son: Monterrey (20736), Guadalupe (11831), Apodaca (11344), Juárez (10447), García (10276), San Nicolás de los Garza (5933), Santa Catarina (5745), Cadereyta Jiménez (3257), Pesquería (3151), y Salinas Victoria (1690).",
+                           "Los 10 Municipios con mayor número de casos de violación son: Ecatepec de Morelos (1,530), Toluca (647), Nezahualcóyotl (644), Naucalpan de Juárez (588), Chimalhuacán (559), Cuautitlán Izcalli (524), Chalco (511), Tecámac (478), Tlalnepantla de Baz (462), y Ixtapaluca (443).",
                               style={'font-size': 14, "font-family":"Arial", "text-align":"justify" }),
                        ]), style={"background-color":"white",
                          "box-shadow": "10px 20px 30px black",
@@ -562,7 +562,7 @@ body = html.Div([
                        dbc.CardImg(src="https://github.com/fdealbam/Violencia-Familiar/blob/main/application/static/chi.jpeg?raw=true"),
     
                        html.P(
-                           "Los 10 Municipios con mayor número de casos de violencia familiar son: Juárez (38353), Chihuahua (20764), Delicias (3300), Hidalgo del Parral (3009), Cuauhtémoc (2306), Nuevo Casas Grandes (941), Camargo (639), Meoqui (422), Aldama (419), y Bocoyna (364).",
+                           "Los 10 Municipios con mayor número de casos de violación son: Juárez (3,003), Chihuahua (1,707), Cuauhtémoc (252), Delicias (240), Hidalgo del Parral (155), Guachochi (137), Nuevo Casas Grandes (101), Bocoyna (95), Camargo (74), y Guadalupe y Calvo (55).",
                            style={'font-size': 14, "font-family":"Arial", "text-align":"justify" }),
                               ]),
                              style={"background-color":"white",
@@ -572,12 +572,12 @@ body = html.Div([
                                   
                          }, disabled=True)),
                        
-               dbc.Col(dbc.Button(([html.P("Guanajuato ", style={"font-size": 30,"color": "black","background-color": "white"}),
+               dbc.Col(dbc.Button(([html.P("Baja California ", style={"font-size": 30,"color": "black","background-color": "white"}),
                        dbc.CardImg(src="https://github.com/fdealbam/Violencia-Familiar/blob/main/application/static/gjto2.jpeg?raw=true"),
                    
                                    
                         html.P(
-                          "Los 10 Municipios con mayor número de casos de violencia familiar son: León (16069), Irapuato (11529), Celaya (10788), Guanajuato (4462), Salamanca (3393), San Miguel de Allende (2497), Salvatierra (1255), Dolores Hidalgo Cuna de la Independencia Nacional (1236), Cortazar (1063), y Apaseo el Grande (1021).",
+                          "Los 5 Municipios con mayor número de casos de violación son: Tijuana (3,185), Mexicali (1,679), Ensenada (943), Tecate (187), Playas de Rosarito (158).",
                            style={'font-size': 14, "font-family":"Arial", "text-align":"justify" }),
                ]), style={"background-color":"white",
                          "box-shadow": "10px 20px 30px black",
