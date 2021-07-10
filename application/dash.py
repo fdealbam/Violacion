@@ -393,7 +393,7 @@ body = html.Div([
             [
                 #html.H4("Consideraciones generales "),
                 html.P(
-                    "El delito de violación, que aquí reúne a violación equiparada y violación simle "
+                    "El delito de violación, que aquí reúne a violación equiparada y violación simple "
                     "es uno de los delitos más graves de la violencia de género que se vive en el país, "
                     "además, son problemas aún irresueltos y son tema central de la " 
                     "agenda legislativa, pero hoy alcanzan relevancia en la agenda seguridad pública nacional, también. "
