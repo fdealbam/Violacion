@@ -27,7 +27,11 @@ yea = datetime.strftime(yesterday, '%Y%m%d')
 today = date.today()
 d2 = today.strftime("Fecha de actualización : %d-%m-%Y")
 
-
+tabla1 = pd.read_csv('https://raw.githubusercontent.com/fdealbam/violenciadegenero/main/Tabla1.csv')              
+tabla1_f = tabla1[tabla1['Tipo de delito']== 'Violación' ]
+tabla1_f.reset_index(inplace=True,)
+TOTVIOLACION = tabla1_f.iloc[0]['GRAND TOTAL']
+TASAVIOLACION = tabla1_f.iloc[0]['tasa_acumulada']
 
 ###############################
 # DATABASES
@@ -393,10 +397,14 @@ body = html.Div([
                     "es uno de los delitos más graves de la violencia de género que se vive en el país, "
                     "además, son problemas aún irresueltos y son tema central de la " 
                     "agenda legislativa, pero hoy alcanzan relevancia en la agenda seguridad pública nacional, también. "
-                    "Este dashboard analítico se compone de una sección en la cual tratamos el delito de violación, observamos "
-                    "su gravedad según intervalos anuales o mensuales; incluimos el análisis detallado de cuatro "
-                    "entidades con más incidencias de este delito; finalmente, comparamos los rankings por entidad "
-                    "según sumas del periódo 2015 al 2021 con las tasas por entidad del mismo intervalo. " 
+              
+      " Entre 2015 y 2021 se registraron "+ str(f"{int(TOTVIOLACION):,}") +" casos, lo que representa una tasa de "+
+       str(TASAVIOLACION) +" delitos por cada 100 mil habitantes. "+
+      "En este dashboard analítico observamos su gravedad según intervalos anuales e intervalos mensuales"+
+      "; también incluimos un análisis detallado de las cuatro entidades con más incidencias en este delito"+
+      "; finalmente, comparamos los rankings por entidad según sumas acumuladas respecto a las tasas, ambas "+
+      "por entidad y ambas del periódo 2015 al 2021.",
+                 
                     " "                    
                     "Hoy existen cada vez mayor atención institucional para atender la violencia contra las mujeres y son fuerte "
                     "preocupación de la sociedad, esto último se evidencia en el hecho que todos seamos más vigilantes al respecto. "
