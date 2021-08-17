@@ -1,5 +1,7 @@
 # Violaciones 
 
+# Violaciones 
+
 import dash
 import matplotlib.pyplot as plt 
 import dash_bootstrap_components as dbc
@@ -339,7 +341,16 @@ tabtitle='Abuso sexual'
 sourceurl='https://www.gob.mx/sesnsp/acciones-y-programas/datos-abiertos-de-incidencia-delictiva?state=published'
 
 
+from typing import Optional
+
+from fastapi import FastAPI
+from pydantic import BaseModel
+
+
 server = flask.Flask(__name__)
+
+#app = FastAPI(#__name__, external_stylesheets=[dbc.themes. LUX], 
+#    server=server)
 app = dash.Dash(__name__, external_stylesheets=[dbc.themes. LUX], server=server)
 
 body = html.Div([
@@ -449,7 +460,7 @@ body = html.Div([
      dbc.Row(
            [
                dbc.Col(dbc.Button(([html.H5("2015", style={"font-size": 18,"color": "black","background-color": "white"}),
-                                    html.H1([str(f"{conf_2015:,d}")],style={"font-size": 45, "color": "black","background-color": "white"}),
+                                    html.H1([str(f"{conf_2015:,d}")],style={"font-size": 30, "color": "black","background-color": "white"}),
                                     dbc.CardImg(src="https://github.com/fdealbam/Violacion/blob/main/application/static/Mapa%20violacion%20Total2015.png?raw=true",
                                                                style={"background-color":"white"}),
                ]), style={"background-color":"white",
@@ -459,7 +470,7 @@ body = html.Div([
                          }, disabled=True)),
                
                dbc.Col(dbc.Button(([html.H5("2016", style={"font-size": 18,"color": "black","background-color": "white"}),
-                                    html.H1([str(f"{conf_2016:,d}")],style={"font-size": 45, "color": "black","background-color": "white"}),
+                                    html.H2([str(f"{conf_2016:,d}")],style={"font-size": 30, "color": "black","background-color": "white"}),
                                     dbc.CardImg(src="https://github.com/fdealbam/Violacion/blob/main/application/static/Mapa%20violacion%20Total2016.png?raw=true",
                                                  style={"background-color":"white"}),
                ]), style={"background-color":"white",
@@ -468,7 +479,7 @@ body = html.Div([
                         'width': '200px'
                          }, disabled=True)),
                dbc.Col(dbc.Button(([html.H5("2017", style={"font-size": 18,"color": "black","background-color": "white"}),
-                                    html.H1([str(f"{conf_2017:,d}")],style={"font-size": 45, "color": "black","background-color": "white"}),
+                                    html.H2([str(f"{conf_2017:,d}")],style={"font-size": 30, "color": "black","background-color": "white"}),
                                     dbc.CardImg(src="https://github.com/fdealbam/Violacion/blob/main/application/static/Mapa%20violacion%20Total2017.png?raw=true",
                                                  style={"background-color":"white"}),
                ]), style={"background-color":"white",
@@ -477,7 +488,7 @@ body = html.Div([
                         'width': '200px'
                          }, disabled=True)),
                dbc.Col(dbc.Button(([html.H5("2018", style={"font-size": 18,"color": "black","background-color": "white"}),
-                                    html.H1([str(f"{conf_2018:,d}")],style={"font-size": 45, "color": "black","background-color": "white"}),
+                                    html.H2([str(f"{conf_2018:,d}")],style={"font-size": 30, "color": "black","background-color": "white"}),
                                     dbc.CardImg(src="https://github.com/fdealbam/Violacion/blob/main/application/static/Mapa%20violacion%20Total2018.png?raw=true",
                                                  style={"background-color":"white"}),
                ]), style={"background-color":"white",
@@ -486,7 +497,7 @@ body = html.Div([
                         'width': '200px'
                          }, disabled=True)),
                dbc.Col(dbc.Button(([html.H5("2019", style={"font-size": 18,"color": "black","background-color": "white"}),
-                                    html.H1([str(f"{conf_2019:,d}")],style={"font-size": 45, "color": "black","background-color": "white"}),
+                                    html.H2([str(f"{conf_2019:,d}")],style={"font-size": 30, "color": "black","background-color": "white"}),
                                     dbc.CardImg(src="https://github.com/fdealbam/Violacion/blob/main/application/static/Mapa%20violacion%20Total2019.png?raw=true",
                                                  style={"background-color":"white"}),
                ]), style={"background-color":"white",
@@ -495,7 +506,7 @@ body = html.Div([
                         'width': '200px'
                          }, disabled=True)),
                dbc.Col(dbc.Button(([html.H5("2020", style={"font-size": 18,"color": "black","background-color": "white"}),
-                                    html.H1([str(f"{conf_2020:,d}")],style={"font-size": 45, "color": "black","background-color": "white"}),
+                                    html.H2([str(f"{conf_2020:,d}")],style={"font-size": 30, "color": "black","background-color": "white"}),
                                     dbc.CardImg(src="https://github.com/fdealbam/Violacion/blob/main/application/static/Mapa%20violacion%20Total2020.png?raw=true",
                                                  style={"background-color":"white"}),
                ]), style={"background-color":"white",
@@ -504,7 +515,7 @@ body = html.Div([
                         'width': '200px'
                          }, disabled=True)),
               dbc.Col(dbc.Button(([html.H5("2021", style={"font-size": 18,"color": "black","background-color": "white"}),
-                                    html.H1([str(f"{conf_2021:,d}")],style={"font-size": 45, "color": "black","background-color": "white"}),
+                                    html.H2([str(f"{conf_2021:,d}")],style={"font-size": 30, "color": "black","background-color": "white"}),
                                     dbc.CardImg(src="https://github.com/fdealbam/Violacion/blob/main/application/static/Mapa%20violacion%20Total2021.png?raw=true",
                                                  style={"background-color":"white"}),
                ]), style={"background-color":"white",
