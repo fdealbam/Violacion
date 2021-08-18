@@ -2,6 +2,8 @@
 
 # Violaciones 
 
+# Violaciones 
+
 import dash
 import matplotlib.pyplot as plt 
 import dash_bootstrap_components as dbc
@@ -341,16 +343,17 @@ tabtitle='Abuso sexual'
 sourceurl='https://www.gob.mx/sesnsp/acciones-y-programas/datos-abiertos-de-incidencia-delictiva?state=published'
 
 
-from typing import Optional
+#from typing import Optional
 
-from fastapi import FastAPI
-from pydantic import BaseModel
+#from fastapi import FastAPI
+#from pydantic import BaseModel
 
 
+#server = flask.Flask(__name__)
 server = flask.Flask(__name__)
 
-#app = FastAPI(#__name__, external_stylesheets=[dbc.themes. LUX], 
-#    server=server)
+#app = FastAPI()#__name__, external_stylesheets=[dbc.themes. LUX], 
+    #server=server)
 app = dash.Dash(__name__, external_stylesheets=[dbc.themes. LUX], server=server)
 
 body = html.Div([
