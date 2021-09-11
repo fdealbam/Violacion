@@ -124,7 +124,7 @@ femi15_21 = ff[[
  'Enero20','Febrero20','Marzo20','Abril20','Mayo20','Junio20','Julio20',
  'Agosto20','Septiembre20','Octubre20','Noviembre20','Diciembre20',
     
- 'Enero21','Febrero21','Marzo21','Abril21','Mayo21','Junio21',#'Julio21',
+ 'Enero21','Febrero21','Marzo21','Abril21','Mayo21','Junio21','Julio21',
 # 'Agosto21','Septiembre21','Octubre21','Noviembre21','Diciembre21'
              ]]
 
@@ -151,7 +151,7 @@ femi15_21['Total2020']= femi15_21[[ 'Enero20', 'Febrero20', 'Marzo20', 'Abril20'
                                'Noviembre20', 'Diciembre20',]].sum(axis=1)
 
 femi15_21['Total2021']= femi15_21[[ 'Enero21','Febrero21', 'Marzo21', 'Abril21', 'Mayo21',
-                                   'Junio21',#'Julio21','Agosto21','Septiembre21','Octubre21',
+                                   'Junio21','Julio21',#'Agosto21','Septiembre21','Octubre21',
                                    #'Noviembre21','Diciembre21'
                                   ]].sum(axis=1)
 
@@ -186,7 +186,7 @@ pagra = ff[[
  'Enero20', 'Febrero20', 'Marzo20', 'Abril20', 'Mayo20', 'Junio20', 'Julio20', 'Agosto20',
     'Septiembre20','Octubre20', 'Noviembre20', 'Diciembre20',
 
- 'Enero21', 'Febrero21', 'Marzo21','Abril21', 'Mayo21', 'Junio21', #'Julio21', 'Agosto21',
+ 'Enero21', 'Febrero21', 'Marzo21','Abril21', 'Mayo21', 'Junio21', 'Julio21',# 'Agosto21',
   #  'Septiembre21','Octubre21','Noviembre21','Diciembre21'
             ]]
 
@@ -548,7 +548,7 @@ body = html.Div([
                        dbc.Badge("mensuales", color="info", className="mr-1")]), 
                                        width={'size': 11,  "offset":1 })]),
        dbc.Row([        
-               dbc.Col(html.H5("(hasta junio 2021)"),
+               dbc.Col(html.H5("(hasta julio 2021)"),
                                        width={ 'size': 3, "offset":1 }),
 
             ]),
@@ -585,30 +585,32 @@ body = html.Div([
     
      dbc.Row(
            [
-               dbc.Col(dbc.Button(([html.P("Ciudad de México", style={"font-size": 30,"color": "black","background-color": "white"}),
-                       dbc.CardImg(src="https://github.com/fdealbam/Violacion/blob/main/application/static/cdmx.jpeg?raw=true",
-                  style={'size': 2,}),
-                          html.P(
-                          "Las 10 alcaldías con mayor número de casos de violación son: Iztapalapa (1,245), Cuauhtémoc (856), Gustavo A. Madero (683), Álvaro Obregón (524), Coyoacán (444), Tlalpan (435), Xochimilco (369), Venustiano Carranza (315), Miguel Hidalgo (313) y Tláhuac (259).",
-                     style={'font-size': 14, "font-family":"Arial", "text-align":"justify" }),
-               ]), style={"background-color":"white",
-                         "box-shadow": "10px 20px 30px black",
-                         'margin-left': '300px',
-                        'width': '550px',
-                         
-                         }, disabled=True)),
+              
                
                dbc.Col(dbc.Button(([html.P("México", style={"font-size": 30,"color": "black","background-color": "white"}),
                        dbc.CardImg(src="https://github.com/fdealbam/Violacion/blob/main/application/static/mx.jpeg?raw=true",
                                     style={'size': 2,}),
                        html.P(
-                           "Los 10 municipios con mayor número de casos de violación son: Ecatepec de Morelos (1,530), Toluca (647), Nezahualcóyotl (644), Naucalpan de Juárez (588), Chimalhuacán (559), Cuautitlán Izcalli (524), Chalco (511), Tecámac (478), Tlalnepantla de Baz (462) e Ixtapaluca (443).",
+                           "Los 10 municipios con mayor número de casos de violaciones fueron: Ecatepec de Morelos (1,614), Nezahualcóyotl (689), Toluca (680), Naucalpan de Juárez (617), Chimalhuacán (594), Cuautitlán Izcalli (554), Chalco (536), Tecámac (513), Tlalnepantla de Baz (483), y Ixtapaluca (456).",
                               style={'font-size': 14, "font-family":"Arial", "text-align":"justify" }),
                        ]), style={"background-color":"white",
                          "box-shadow": "10px 20px 30px black",
-                        # 'margin-left': '10px',
+                         'margin-left': '300px',
                         'width': '550px',
                                   
+                         }, disabled=True)),
+               
+                dbc.Col(dbc.Button(([html.P("Ciudad de México", style={"font-size": 30,"color": "black","background-color": "white"}),
+                       dbc.CardImg(src="https://github.com/fdealbam/Violacion/blob/main/application/static/cdmx.jpeg?raw=true",
+                  style={'size': 2,}),
+                          html.P(
+                          "Las 10 alcaldías con mayor número de casos de violaciones son: Iztapalapa (1,328), Cuauhtémoc (912), Gustavo A. Madero (748), Álvaro Obregón (564), Coyoacán (483), Tlalpan (483), Xochimilco (401), Venustiano Carranza (343), Miguel Hidalgo (334), y Tláhuac (286).",
+                     style={'font-size': 14, "font-family":"Arial", "text-align":"justify" }),
+               ]), style={"background-color":"white",
+                         "box-shadow": "10px 20px 30px black",
+                        # 'margin-left': '300px',
+                        'width': '550px',
+                         
                          }, disabled=True)),
      ]),
     html.Br(),
@@ -622,7 +624,7 @@ body = html.Div([
                        dbc.CardImg(src="https://github.com/fdealbam/Violacion/blob/main/application/static/chi.jpeg?raw=true"),
     
                        html.P(
-                           "Los 10 municipios con mayor número de casos de violación son: Juárez (3,003), Chihuahua (1,707), Cuauhtémoc (252), Delicias (240), Hidalgo del Parral (155), Guachochi (137), Nuevo Casas Grandes (101), Bocoyna (95), Camargo (74), Guadalupe y Calvo (55).",
+                           "Los 10 municipios con mayor número de casos de violaciones son:Juárez (3,199), Chihuahua (1,803), Cuauhtémoc (269), Delicias (249), Hidalgo del Parral (164), Guachochi (148), Nuevo Casas Grandes (109), Bocoyna (101), Camargo (76), y Guadalupe y Calvo (59).",
                            style={'font-size': 14, "font-family":"Arial", "text-align":"justify" }),
                               ]),
                              style={"background-color":"white",
@@ -637,7 +639,7 @@ body = html.Div([
                    
                                    
                         html.P(
-                          "Los 5 municipios con mayor número de casos de violación son: Tijuana (3,185), Mexicali (1,679), Ensenada (943), Tecate (187) y Playas de Rosarito (158).",
+                          "Los 5 municipios con mayor número de casos de violación son:Tijuana (3,317), Mexicali (1,747), Ensenada (999), Tecate (195), Playas de Rosarito (166).",
                            style={'font-size': 14, "font-family":"Arial", "text-align":"justify" }),
                ]), style={"background-color":"white",
                          "box-shadow": "10px 20px 30px black",
